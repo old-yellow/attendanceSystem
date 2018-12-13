@@ -1,0 +1,76 @@
+h1 {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+h1{
+    text-shadow: 2px 2px 2px #1C6EA4;
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+}
+h1:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+}
+
+
+div {
+    float: right;
+    width: 500px;
+    padding: 25px;
+    margin: 25px;
+}
+.a-upload {
+    padding: 4px 10px;
+    height: 33px;
+    width: 500px;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    color: #888;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+
+.a-upload  input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}
+
+button { /* 按钮美化 */
+	width: 200px; /* 宽度 */
+	height: 40px; /* 高度 */
+	border-width: 0px; /* 边框宽度 */
+	border-radius: 3px; /* 边框半径 */
+	background: #1E90FF; /* 背景颜色 */
+	cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+	outline: none; /* 不显示轮廓线 */
+	font-family: Microsoft YaHei; /* 设置字体 */
+	color: white; /* 字体颜色 */
+	font-size: 17px; /* 字体大小 */
+}
+button:hover { /* 鼠标移入按钮范围时改变颜色 */
+	background: #5599FF;
+}
+
+p{
+    font:bold 30px helvetica,arial,sans-serif;
+    color:rgb(145, 21, 202);
+    text-shadow:5px 5px  5px #333
+}
