@@ -1,5 +1,66 @@
-<div >
-  <p style = "text-decoration:line-through">反馈信息：</p> 
-  <input type="text" class="a-upload" [(ngModel)]="oneChild"  >
-  <button (click)="saveDate()" >反馈给副总经理</button>
-</div>
+<button (click)="getLeavesDate()" >显示请假申请</button>
+<button (click)="hintLeave()">批准请假</button>
+<button (click)="deleteLeavesDate()">不批准请假</button>
+<div class="user-item-container">
+  <table class ="table table-bordered">
+    <thead>
+      <tr>
+        <th>请假id</th>
+        <th>员工id</th>
+        <th>员工姓名</th>
+        <th>请假时间</th>
+        <th>请假原因</th>
+        <th>询问时间</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let leave of leave">
+        <td>{{leave.leaveId}}</td>
+        <td>{{leave.userId}}</td>
+        <td>{{leave.userName}}</td>
+        <td>{{leave.leaveTime}}</td>
+        <td>{{leave.leaveReason}}</td>
+        <td>{{leave.askTime}}</td>
+      </tr>
+    </tbody>
+  </table>
+ </div>
+ <button (click)="getOutDate()" >显示外出申请</button>
+<button (click)="hintOut()">批准外出</button>
+<button (click)="deleteOutDate()">不批准外出</button>
+ <div class="user-item-container">
+    <table class ="table table-bordered">
+      <thead>
+        <tr>
+          <th>外出id</th>
+          <th>员工id</th>
+          <th>员工姓名</th>
+          <th>外出时间</th>
+          <th>外出原因</th>
+          <th>询问时间</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor = "let out of out">
+          <td>{{out.OutId}}</td>
+          <td>{{out.userId}}</td>
+          <td>{{out.userName}}</td>
+          <td>{{out.OutTime}}</td>
+          <td>{{out.OutReason}}</td>
+          <td>{{out.askTime}}</td>
+        </tr>
+      </tbody>
+    </table>
+   </div>
+
+ <div class = "fankui" >
+    <p style = "text-decoration:line-through">反馈信息：</p> 
+    <input type="text" class="a-upload" [(ngModel)]="savedata"  >
+    <button (click)="saveDate()" >反馈给副总经理</button>
+  </div>
+
+  <div class = "fankui" >
+      <p style = "text-decoration:line-through">反馈信息：</p> 
+      <input type="text" class="a-upload" [(ngModel)]="staffdata"  >
+      <button (click)="saveStaffDate()" >反馈给员工</button>
+    </div>

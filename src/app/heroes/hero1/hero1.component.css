@@ -19,12 +19,11 @@ h1:hover {
     background-color: #DDD;
     left: .1em;
 }
-div {
+.fankui {
     float: right;
-    width: 500px;
-    padding: 25px;
-    margin: 25px;
+
 }
+
 .a-upload {
     padding: 4px 10px;
     height: 33px;
@@ -71,4 +70,28 @@ p{
     font:bold 30px helvetica,arial,sans-serif;
     color:rgb(145, 21, 202);
     text-shadow:5px 5px  5px #333
+}
+
+.table{
+    width: 60%;
+    height: 50%;
+    text-align:center;
+    vertical-align:middle;
+    font-size:17px;
+    margin-left:15%;
+    margin-top:5%;
+}
+.captiontext{
+    font-weight: bold;
+    font-size:22px;
+    color: black;
+    height: 80px;
+}
+th{
+    text-align: center;
+    border: 1px solid #F00;
+}
+td{
+    font-size:15px;
+    border: 1px solid #F00;
 }

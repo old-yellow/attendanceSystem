@@ -1,3 +1,8 @@
 export class Hero {
-    name:string;
+    comment:string;
+    userId: string;
+     leaveTime:string;
+    askTime: string;
+     leaveCatagoryID: string;
+     leaveReason: string;
 }

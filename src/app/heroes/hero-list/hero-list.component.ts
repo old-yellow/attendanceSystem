@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Hero } from '../../domain/hero';
 import { HEROES } from '../../mock-heroes';
+import { HeroService } from '../../service/hero.service';
 
 @Component({
   selector: 'app-hero-list',
@@ -10,15 +11,18 @@ import { HEROES } from '../../mock-heroes';
 })
 export class HeroListComponent implements OnInit {
 
-  constructor() { }
-
-  heroes = HEROES;
-  selectedHero:Hero;
-  
-  onSelect(hero:Hero):void{
-    this.selectedHero = hero;
+  constructor(private heroService: HeroService) { }
+  time:Array<Hero>;
+  twoChild;
+  getDate() {
+    this.twoChild = this.heroService. getLeavesOne()
+    .then(result =>{
+      this.time = result;
+    });
   }
-
+  deleteDate(){
+this.time = [];
+  }
   ngOnInit() {
   }
 
