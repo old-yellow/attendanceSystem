@@ -1,0 +1,26 @@
+<button (click)="getDate()" >显示请假</button>
+<button (click)="deleteDate()">删除数据</button>
+<div class="user-item-container">
+  <table class ="leavetable">
+    <thead>
+      <tr>
+        <th>发送信息</th>
+        <th>员工id</th>
+        <th>离开时间</th>
+        <th>询问时间</th>
+        <th>请假id</th>
+        <th>请假原因</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let time of time">
+        <td>{{time.comment}}</td>
+        <td>{{time.userId}}</td>
+        <td>{{time.leaveTime}}</td>
+        <td>{{time.askTime}}</td>
+        <td>{{time.leaveCatagoryID}}</td>
+        <td>{{time.leaveReason}}</td>
+      </tr>
+    </tbody>
+  </table>
+ </div>

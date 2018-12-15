@@ -1,7 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+<<<<<<< HEAD
 import { CoreModule } from './core/core.module';
+=======
+import { HttpModule } from'@angular/http';
+import { ApiService } from './service/api.service';
+>>>>>>> 696fc87842192da0ac78cfa00f3c27370d9b9129
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,14 +30,22 @@ import { ReactiveFormsModule } from '@angular/forms';
     NavbarComponent
   ],
   imports: [
+    HttpModule,
     BrowserModule,
     HttpModule,
     FormsModule,
+<<<<<<< HEAD
     AppRoutingModule,
     CoreModule,
     ReactiveFormsModule,
   ],
   providers: [ApiService, AuthService],
+=======
+    AppRoutingModule
+    
+  ],
+  providers: [ApiService],
+>>>>>>> 696fc87842192da0ac78cfa00f3c27370d9b9129
   bootstrap: [AppComponent]
 })
 export class AppModule { }
