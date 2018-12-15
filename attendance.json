@@ -1,9 +1,25 @@
 {
-    "giveUser": [
+    "users": [
         {
+            "id": 0,
             "comment": "登录",
             "userId": 0,
-            "password": 123
+            "password": "123"
+        },
+        {
+            "id": 1,
+            "userId": 1,
+            "password": "1234"
+        },
+        {
+            "id": 2,
+            "userId": 2,
+            "password": "12345"
+        },
+        {
+            "id": 3,
+            "userId": 3,
+            "password": "123456"
         }
     ],
     "getUser": [
@@ -12,8 +28,16 @@
             "leaveTimes": 2,
             "cardState": true,
             "userName": "oldyellow"
+        },
+        {
+            "userName": "depManager"
+        },
+        {
+            "userName": "degManager"
+        },
+        {
+            "userName": "Manager"
         }
-
     ],
     "clockIn": [
         {
@@ -26,7 +50,7 @@
         {
             "comment": "员工请假发送信息",
             "userId": 0,
-            "leaveTime": "2018-10-01",
+            "leaveTime": "2018/10/01-2018/10/03",
             "askTime": "2018-08-01",
             "leaveCatagoryID": "1",
             "leaveReason": "世界那么大"
@@ -38,7 +62,7 @@
             "leaveId": 0,
             "userId": 0,
             "userName": "oldyellow",
-            "leaveTime": "2018-10-01",
+            "leaveTime": "2018/10/01-2018/10/03",
             "leaveCatagoryID": "1",
             "leaveReason": "世界那么大",
             "askTime": "2018-08-01"
@@ -50,7 +74,7 @@
             "leaveId": 0,
             "userId": 0,
             "userName": "oldyellow",
-            "leaveTime": "2018-10-01",
+            "leaveTime": "2018/10/01-2018/10/03",
             "askTime": "2018-08-01",
             "input0": "begin",
             "firstAnswer": true,
@@ -66,7 +90,7 @@
             "leaveId": 0,
             "userId": 0,
             "userName": "oldyellow",
-            "leaveTime": "2018-10-01",
+            "leaveTime": "2018/10/01-2018/10/03",
             "askTime": "2018-08-01",
             "input0": "begin",
             "firstAnswer": false,
@@ -82,7 +106,7 @@
             "leaveId": 0,
             "userId": 0,
             "userName": "oldyellow",
-            "leaveTime": "2018-10-01",
+            "leaveTime": "2018/10/01-2018/10/03",
             "askTime": "2018-08-01",
             "leaveCatagoryID": "1",
             "leaveReason": "世界那么大",
@@ -114,7 +138,7 @@
             "leaveId": 0,
             "userId": 0,
             "userName": "oldyellow",
-            "leaveTime": "2018-10-01",
+            "leaveTime": "2018/10/01-2018/10/03",
             "askTime": "2018-08-01",
             "leaveCatagoryID": "1",
             "leaveReason": "世界那么大",
@@ -178,7 +202,7 @@
         {
             "comment": "员工外出发送信息",
             "userId": 0,
-            "OutTime": "2018-10-01",
+            "OutTime": "5pm-6pm",
             "askTime": "2018-08-01",
             "OutReason": "拿个外卖"
         }
@@ -189,7 +213,7 @@
             "OutId": 0,
             "userId": 0,
             "userName": "oldyellow",
-            "OutTime": "2018-10-01",
+            "OutTime": "5pm-6pm",
             "OutReason": "拿个外卖",
             "askTime": "2018-08-01"
         }
@@ -200,7 +224,7 @@
             "OutId": 0,
             "userId": 0,
             "userName": "oldyellow",
-            "OutTime": "2018-10-01",
+            "OutTime": "5pm-6pm",
             "askTime": "2018-08-01",
             "input0": "begin",
             "firstOutAnswer": true,
@@ -216,7 +240,7 @@
             "OutId": 0,
             "userId": 0,
             "userName": "oldyellow",
-            "OutTime": "2018-10-01",
+            "OutTime": "5pm-6pm",
             "askTime": "2018-08-01",
             "input0": "begin",
             "firstOutAnswer": false,
@@ -232,7 +256,7 @@
             "OutId": 0,
             "userId": 0,
             "userName": "oldyellow",
-            "OutTime": "2018-10-01",
+            "OutTime": "5pm-6pm",
             "askTime": "2018-08-01",
             "OutReason": "拿个外卖",
             "firstOutAnswer": true,
@@ -263,7 +287,7 @@
             "OutId": 0,
             "userId": 0,
             "userName": "oldyellow",
-            "OutTime": "2018-10-01",
+            "OutTime": "5pm-6pm",
             "askTime": "2018-08-01",
             "OutReason": "拿个外卖",
             "firstOutAnswer": true,
@@ -293,7 +317,7 @@
     ],
     "GetOutOK":[
         {
-            "comment": "员工请假反馈",
+            "comment": "员工外出反馈",
             "OutId": "0",
             "askTime": "2018-08-01",
             "askState": true,
@@ -310,7 +334,7 @@
     ],
     "GetOutRefuse": [
         {
-            "comment": "员工请假反馈",
+            "comment": "员工外出反馈",
             "OutId": "0",
             "askTime": "2018-08-01",
             "askState": false,

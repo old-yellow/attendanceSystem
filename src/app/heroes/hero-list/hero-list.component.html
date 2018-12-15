@@ -1,8 +1,0 @@
-<ul class="heroes"  >
-  <li *ngFor="let hero of heroes"
-      [class.selected]="hero === selectedHero"
-      (click)="onSelect(hero)">
-    {{hero.name}}
-  </li>
-</ul>
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>

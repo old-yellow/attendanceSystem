@@ -1,0 +1,73 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>登录</title>
+
+    <!-- <script language="javascript" src="js/jquery.js"></script>
+<script language="javascript" src="js/srun_portal.js"></script>
+<script language="javascript" src="js/message.js"></script> -->
+</head>
+
+<body class="bottom">
+
+    <div class="navbar">
+        <div class="logo"></div>
+    </div>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="container">
+
+            <div class="contain clearfix">
+
+                <div class="float_r" style="margin-top: 80px;">
+
+
+                    <!-- <input type="hidden" name="action" value="login">
+                    <input type="hidden" name="ac_id" value="13">
+                    <input type="hidden" name="user_ip" value="172.23.193.125">
+                    <input type="hidden" name="nas_ip" value="">
+                    <input type="hidden" name="user_mac" value="">
+                    <input type="hidden" name="url" value=""> -->
+                    <ul class="login">
+                        <li>
+                            <p class="margbt">用户名</p>
+                            <div class="input">
+                                <input formControlName="username" value="3016218098"/>
+                                <!-- <label *ngIf="usernameRef.errors?.minlength">should be at least 3 charactors</label> -->
+                                <!-- <label *ngIf="auth?.hasError">{{auth.errMsg}}</label> -->
+                            </div>
+                        </li>
+                        <li>
+                            <p class="margbt">密码</p>
+                            <div class="input">
+                                <input type="password" name="password" formControlName="password"/>
+                                <!-- <label *ngIf="passwordRef.errors?.required">this is required</label> -->
+                            </div>
+                        </li>
+
+                        <li class="margin">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr valign="middle">
+                                    <td width="90" height="40" align="center">
+                                        <button type="submit">Login</button>
+                                    </td>
+
+
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </form>
+
+    <div class="footer">
+        <div class="float_l" style="width:auto;">web大作业</div>
+        <div class="float_r" style="width:auto;">王天 王春力 王磊 魏锰</div>
+    </div>
+</body>
+
+</html>

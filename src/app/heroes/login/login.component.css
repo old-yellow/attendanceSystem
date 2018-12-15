@@ -1,0 +1,186 @@
+
+	* {
+		margin:0px 0px;
+		padding:0px 0px;
+		font-family:'微软雅黑','Microsoft Yahei',Arial, Helvetica, sans-serif;
+	}
+	body {
+		margin:0 auto;
+		padding:0px 0px;
+	}
+	a {
+		color:#333;
+		text-decoration: none;
+		cursor: pointer;
+		outline:none;
+	}
+	a:hover {
+		text-decoration: none;
+		color:#06F;
+	}
+	ul {
+		list-style:none;
+	}
+	.float_l {
+		float:left;
+	}
+	.float_r {
+		float:right;
+	}
+	.clearfix:before, .clearfix:after {
+		content: "";
+		display: block;
+	}
+	.clearfix:after {
+		clear: both;
+	}
+	.navbar {
+		width:96%;
+		margin:0 auto;
+		vertical-align:middle;
+		/*background-color:#1997ec;*/
+	}
+	.container {
+		background-image:url("bg_1.jpg") ;
+        height:500px;
+        width: 100%;
+		margin:0px auto;
+		text-align:center;
+	}
+	.contain {
+		width:980px;
+		height:100%;
+		margin:0 auto;
+		padding:0px;
+	}
+	.footer {
+		width:980px;
+		margin:0 auto;
+		font-size:12px;
+		height:35px;
+		line-height:35px;
+	}
+	
+	.login {
+		padding:1.5em 1.5em 1em;
+		/*background-color:#e2eef1;
+		background-image: linear-gradient(to bottom, rgb(226, 238, 241) 50%, rgb(212, 229, 234) 100%);
+		border:1px solid #CCC;*/
+		border-radius: 4px 4px 4px 4px;
+		text-align:left;
+		font-size:.875em;
+		position:relative;
+		
+	}
+	ul.login li {
+		margin-bottom:5px;
+	}
+	/*----login tab---*/
+	.margbt { margin-bottom:4px; color:white;}
+	textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+		background-color: rgb(255, 255, 255);
+		border: 1px solid rgb(204, 204, 204);
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+		transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+	}
+	select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+		display: inline-block;
+		height: 24px;
+		margin-bottom: 10px;
+		font-size: 14px;
+		line-height: 24px;
+		color: rgb(36, 36, 36);
+		border-radius: 3px;
+		vertical-align: middle;
+		padding: 4px 6px;
+	}
+	textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+		border-color: rgba(82, 168, 236, 0.8);
+		outline: 0px none;
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(82, 168, 236, 0.6);
+	}
+	.input input[type="text"], .input input[type="password"] { width:268px;}
+	input[type="checkbox"] { vertical-align:middle; margin-top:-3px;}
+
+	.login input[type='button'],input[type='submit'] {
+		width:120px;
+		border:0px solid #FFF;
+		height:40px;
+		color:#FFF;
+		font-size:14px;
+		background-image:none;
+		background-clip:border-box;
+		background-color:#18b4b9;
+		display:inline-block;
+		background-attachment:scroll;
+		background-repeat:repeat;
+		background-position-x:0%;
+		background-position-y:0%;
+		border-top-left-radius:3px;
+		border-top-right-radius:3px;
+		border-bottom-left-radius:3px;
+		border-bottom-right-radius:3px;
+		cursor:pointer;
+	}
+	
+	.login input[type='button']:hover,input[type='submit']:hover {
+		background-color:#00c87b;
+	}
+	
+	.login a {
+		width:80px;
+		border:0px solid #FFF;
+		height:35px;
+		line-height:35px;
+		text-align:center;
+		color:#FFF;
+		font-size:14px;
+		background-image:none;
+		background-clip:border-box;
+		background-color:#3bb3e0;
+		display:inline-block;
+		background-attachment:scroll;
+		background-repeat:repeat;
+		background-position-x:0%;
+		background-position-y:0%;
+		border-top-left-radius:3px;
+		border-top-right-radius:3px;
+		border-bottom-left-radius:3px;
+		border-bottom-right-radius:3px;
+	}
+	.login a:hover {
+		background-color:#2482a5;	
+	}
+	/*----login tab---*/
+	.logo {
+		background:url(logo.png) no-repeat;
+		height:55px;
+		margin:10px 120px;
+	}
+	.waps{ 
+		width:600px; 
+		text-align:center; 
+		line-height:28px; 
+		font-size:12px; 
+		font-family:Arial, Helvetica, sans-serif; 
+		margin-top:100px; 
+		color:white; 
+		text-align:left; 
+		border:1px solid #CCC; 
+		border-radius: 4px 4px 4px 4px; 
+		padding:5px 5px;
+	}
+	.con{ 
+		text-align:left; 
+		width:600px; 
+		margin:0px auto; 
+		background:rgba(255, 255, 255, 0.8) none repeat scroll 0 0 !important;/*实现FF背景透明，文字不透明*/
+		filter:Alpha(opacity=80); 
+		background:#fff;/*实现IE背景透明*/
+		border-radius: 4px 4px 4px 4px; 
+	}
+	.con p{ 
+		position:relative; 
+		padding:5px 10px; 
+		color:black;
+	}/*实现IE文字不透明*/
