@@ -10,7 +10,9 @@ export class HeroService {
 
   private inputData: string[] ;
   private inputData1: string[];
+  private clockData:string[];
   private staffData:string[];
+  private askStateData:string[];
   private api_url;
   private headers;
 
@@ -96,5 +98,13 @@ export class HeroService {
 
   getInputStaff() {
     return this.staffData;
+  }
+
+  getAskState(){
+    return this.askStateData;
+  }
+
+  getClockIn(){
+    return this.clockData;
   }
 }

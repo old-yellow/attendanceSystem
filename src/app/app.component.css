@@ -21,11 +21,9 @@ h1:hover {
 }
 div{
     float: left;
-    width: 100%;
 }
 html,body{
    height: 100vh;
-   background-image: url(appBg.jpg);
 }
 .caidan{
     position: relative; ;
