@@ -19,10 +19,18 @@ export class UserService {
 
   //按id查询User
   getUserById(id: string): Promise<User> {
-    const url = `${this.api_url}/${id}`;
+    const url = `${this.api_url}/?userId=${id}`;
     return this.http.get(url, { headers: this.headers })
       .toPromise()
-      .then(res => res.json() as User)
+      .then(res => res.json()[0] as User)
+      .catch(this.handleError);
+  }
+
+  getUser(): Promise<User[]> {
+    const url = `${this.api_url}`;
+    return this.http.get(url, { headers: this.headers })
+      .toPromise()
+      .then(res => res.json() as User[])
       .catch(this.handleError);
   }
 

@@ -20,13 +20,9 @@ h1:hover {
     left: .1em;
 }
 div{
-    float: left;
+    width: 100%;
 }
 html,body{
    height: 100vh;
-}
-.caidan{
-    position: relative; ;
-    top:120px;
-    
+   width: 100%;
 }

@@ -3,6 +3,7 @@ import { Http, Headers, Response } from '@angular/http';
 
 import { Auth } from '../domain/auth';
 
+
 @Injectable()
 export class AuthService {
 
@@ -11,16 +12,18 @@ export class AuthService {
   loginWithCredentials(userId: string, password: string): Promise<Auth> {
     return this.userService.getUserById(userId)  //调用UserService中的方法来查找user
       .then(user => {
+        console.log("user "+ user.id)
         let auth = new Auth();
         localStorage.clear;
-        if(user.userId == 0){
-          localStorage.setItem('redirectUrl', 'hero4');
-        }else if(user.userId == 1){
-          localStorage.setItem('redirectUrl', 'hero1');
-        }else if(user.userId == 2){
-          localStorage.setItem('redirectUrl', 'hero2');
-        }else {
+      console.log( "11"+user.userId)
+        if(user.userId < 10){
           localStorage.setItem('redirectUrl', 'hero3');
+        }else if(user.userId < 100){
+          localStorage.setItem('redirectUrl', 'hero2');
+        }else if(user.userId < 1000){
+          localStorage.setItem('redirectUrl', 'hero1');
+        }else if(user.userId < 10000){
+          localStorage.setItem('redirectUrl', 'hero4');
         }
         if (null === user) {
           //没找到user
