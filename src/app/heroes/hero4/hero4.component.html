@@ -1,0 +1,20 @@
+<div class = "anniu">
+<button (click)="getClockIn()">今日是否打卡</button>
+<button (click)="getResult()">请假是否批准</button>
+</div>
+
+<div class = "fankui">
+<div >
+  <p style = "text-decoration:line-through">请假申请：</p>
+  <input type="text" class="a-upload" [(ngModel)]="saveout" placeholder="请假时间，原因及申请时间" >
+  <button (click)="getDate()" >提交</button>
+</div>
+
+<div >
+  <p style = "text-decoration:line-through">外出申请：</p> 
+  <input type="text" class ="a-upload" [(ngModel)]="saveleave" placeholder="外出时间，原因，及申请时间" >
+  <button (click)="saveDate()" >提交</button>
+</div>
+
+
+</div>
