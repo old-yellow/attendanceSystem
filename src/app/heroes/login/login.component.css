@@ -102,8 +102,29 @@
 	.input input[type="text"], .input input[type="password"] { width:268px;}
 	input[type="checkbox"] { vertical-align:middle; margin-top:-3px;}
 
-	.login input[type='button'],input[type='submit'] {
-		width:120px;
+	/* .login input[type='button'],input[type='submit'] {
+		width:1px;
+		border:0px solid #FFF;
+		height:40px;
+		color:#FFF;
+		font-size:14px;
+		background-image:none;
+		background-clip:border-box;
+		background-color:#18b4b9;
+		display:inline-block;
+		background-attachment:scroll;
+		background-repeat:repeat;
+		background-position-x:0%;
+		background-position-y:0%;
+		border-top-left-radius:3px;
+		border-top-right-radius:3px;
+		border-bottom-left-radius:3px;
+		border-bottom-right-radius:3px;
+		cursor:pointer;
+	} */
+
+	.margin.table.tr.td.button[type='submit']{
+		width:1px;
 		border:0px solid #FFF;
 		height:40px;
 		color:#FFF;
@@ -123,7 +144,7 @@
 		cursor:pointer;
 	}
 	
-	.login input[type='button']:hover,input[type='submit']:hover {
+	/* .login input[type='button']:hover,input[type='submit']:hover {
 		background-color:#00c87b;
 	}
 	
@@ -150,7 +171,7 @@
 	}
 	.login a:hover {
 		background-color:#2482a5;	
-	}
+	} */
 	/*----login tab---*/
 	.logo {
 		background:url(logo.png) no-repeat;
