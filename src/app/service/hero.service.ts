@@ -13,6 +13,8 @@ export class HeroService {
   private clockData:string[];
   private staffData:string[];
   private askStateData:string[];
+  private qingjia_data:string[];
+  private waichu_data:string[];
   private api_url;
   private headers;
 
@@ -100,11 +102,36 @@ export class HeroService {
     return this.staffData;
   }
 
-  getAskState(){
-    return this.askStateData;
-  }
+ setInputValue_qingjia(value){
+   value = " "+value;
+   this.qingjia_data += value;
+ }
 
-  getClockIn(){
-    return this.clockData;
-  }
+ setInputValue_waichu(value){
+  value = " "+value;
+  this.waichu_data += value;
+}
+
+getClock():Promise<Hero[]>{
+  const url = `${this.api_url +'/clockIn'}`;
+  return this.http.get(url, {headers: this.headers})
+      .toPromise()
+      .then(res => res.json() as Hero[])
+      .catch(this.handleError);
+}
+
+getqingjiaok():Promise<Hero[]>{
+  const url = `${this.api_url +'/GetLeaveOK'}`;
+  return this.http.get(url, {headers: this.headers})
+      .toPromise()
+      .then(res => res.json() as Hero[])
+      .catch(this.handleError);
+}
+
+getwaichuok():Promise<Hero[]>{
+  const url = `${this.api_url +'/GetOutOK'}`;
+  return this.http.get(url, {headers: this.headers})
+      .toPromise()
+      .then(res => res.json() as Hero[])
+      .catch(this.handleError);
 }
