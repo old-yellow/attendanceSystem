@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+      <div class="input">
+        <input class="btnInput" placeholder="拒绝申请ID" #bookId />
+      </div>
+      <div class="button">
+        <button class="btnDelete" (click)="delete(bookId.value); bookId.value=''">
+          拒绝
+        </button>
+      </div>
+      <div class="tip">
+        {{tip}}
+      </div>
+	</body>
+</html>

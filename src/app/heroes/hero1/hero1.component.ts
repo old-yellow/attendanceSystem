@@ -1,59 +1,22 @@
 import { Component, OnInit,EventEmitter, Input, Output  } from '@angular/core';
-import { HeroService } from '../../service/hero.service';
-import { Hero } from '../../domain/hero';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-hero1',
   templateUrl: './hero1.component.html',
   styleUrls: ['./hero1.component.css']
 })
 export class Hero1Component implements OnInit {
-  savedata;
-  staffdata;
-  leavedate;
-  outdate;
-  leave:Array<Hero>;
-  out:Array<Hero>;
-  constructor(
-    private heroService: HeroService
-  ) { }
-  ngOnInit() {
-  }  
-  
-  getLeavesDate(){
-    this.leavedate = this.heroService. getLeavesOne()
-    .then(result =>{
-      this.leave = result;
-    });
-  }
-  deleteLeavesDate(){
-    this.leave = [];
-    alert("反馈信息给员工");
-  }
-   saveDate() {
-    this.heroService.setInputValue(this.savedata);
-  }
-  saveStaffDate() {
-    this.heroService.setInputStaff(this.savedata);
-  }
-  getOutDate(){
-    this.outdate = this.heroService. getOutOne()
-    .then(result =>{
-      console.log(result);
-      this.out = result;
-    });
-  }
-  deleteOutDate(){
-    alert("反馈信息给员工");
-    this.out = [];
-  }
+  constructor(private router: Router) {}
 
-  hintLeave(){
-    alert("反馈信息给副总经理");
-    this.leave =[];
+  
+  onClickToSearch() {
+    this.router.navigate(['search']);
   }
-  hintOut(){
-    alert("反馈信息给副总经理");
-    this.out =[];
+  onClickToOlds() {
+    this.router.navigate(['delete']);
   }
+  onClickToAdd() {
+    this.router.navigate(['add']);
+  }
+  ngOnInit(): void {}
 }

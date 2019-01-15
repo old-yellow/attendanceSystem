@@ -1,0 +1,49 @@
+.input {
+    text-align: center;
+  }
+  .btnInput{
+    width: 15em;
+    height: 1.7em;
+    font-size: 18px;
+    margin-top: 3%;
+    margin-left: 30px;
+    position: relative;
+  }
+  
+  .button {
+    text-align: center;
+    margin-top: 7%;
+    font-size: 20px;
+    background-color: rgba(178, 211, 221, 0.82);
+    height: 65px;
+  }
+  
+  .button button {
+    width: 120px;
+    height: 35px;
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 15px;
+  }
+  
+  .button button:hover {
+    background-color: #eeecc3;
+    color: #af6967;
+  }
+  
+  .button button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+  }
+  .tip {
+    position: relative;
+    text-align: center;
+    margin-top: 2%;
+    color: red;
+  }
+  

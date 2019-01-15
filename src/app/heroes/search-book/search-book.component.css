@@ -1,0 +1,130 @@
+.block {
+    position: relative;
+    height: 30em;
+    width: 43em;
+    background-color: rgba(210, 210, 210, 0.57);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-left: 1em;
+    padding-top: 1em;
+    float: right;
+    margin-right: 13em;
+    border-radius: 30px;
+  }
+  .blockSearch {
+    position: relative;
+    text-align: center;
+    width: 15em;
+    height: 16em;
+    background-color: rgba(210, 210, 210, 0.57);
+    border-radius: 30px;
+    padding-top: .1em;
+    float: right;
+    margin-right: 3em;
+  }
+  .books {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+  .books li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+    width: 40em;
+  }
+  .books li.selected:hover {
+    background-color: #b7dccf !important;
+    color: white;
+  }
+  .books li:hover {
+    color: #af6967;
+    background-color: #bcddd1;
+    left: .1em;
+  }
+  .selected {
+    background-color: #CFD8DC !important;
+    color: white;
+  }
+  .books li.selected:hover {
+    background-color: #BBD8DC !important;
+    color: white;
+  }
+  .books .text {
+    position: relative;
+    top: -3px;
+  }
+  .books .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #607D8B;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
+  .id {
+    margin-left: .5em;
+  }
+  .span {
+    position: relative;
+    margin-left: 2em;
+  }
+  .span1 {
+    position: relative;
+    margin-left: 3em;
+  }
+  .imput {
+    position: relative;
+    margin-top: 2em;
+  }
+  .book_id {
+    position: relative;
+    margin-top: 2em;
+  }
+  .input {
+    width: 12em;
+    height: 2em;
+    border-radius: 10px;
+    font-size: 1em;
+  }
+  
+  button {
+    width: 100px;
+    height: 35px;
+    background-color: #cfd8dc;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 1.5em;
+  }
+  
+  button:hover {
+    background-color: #af6967;
+    color: #cfd8dc;
+  }
+  
+  button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+  }
+  .tip {
+    position: relative;
+    text-align: center;
+    margin-top: 2%;
+    color: red;
+  }

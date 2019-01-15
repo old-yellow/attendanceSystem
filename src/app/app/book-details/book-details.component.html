@@ -1,0 +1,24 @@
+<div *ngIf="book">
+  <h2>请假单详情</h2>
+  <div><label>序号: </label>{{book.id}}</div>
+  <div>
+    <label>请假编号: </label>
+    <input [(ngModel)]="book.bid" placeholder="bid"/>
+  </div>
+  <div>
+    <label>员工名称: </label>
+    <input [(ngModel)]="book.bname" placeholder="bname"/>
+  </div>
+  <div>
+    <label>请假开始时间: </label>
+    <input [(ngModel)]="book.stime" placeholder="stime"/>
+  </div>
+  <div>
+      <label>请假天数: </label>
+      <input [(ngModel)]="book.number" placeholder="number"/>
+  </div>
+  <div>
+    <label>：</label>
+    <textarea [(ngModel)]="book.description" placeholder="description"></textarea>
+  </div>
+</div>

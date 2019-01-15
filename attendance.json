@@ -1,349 +1,407 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "comment": "登录",
-            "userId": 1001,
-            "password": "123"
-        },
-        {
-            "id": 2,
-            "userId": 101,
-            "password": "1234"
-        },
-        {
-            "id": 3,
-            "userId": 11,
-            "password": "12345"
-        },
-        {
-            "id": 4,
-            "userId": 1,
-            "password": "123456"
-        }
-    ],
-    "getUser": [
-        {
-            "comment": "登陆后显示信息",
-            "leaveTimes": 2,
-            "cardState": true,
-            "userName": "oldyellow"
-        },
-        {
-            "userName": "depManager"
-        },
-        {
-            "userName": "degManager"
-        },
-        {
-            "userName": "Manager"
-        }
-    ],
-    "clockIn": [
-        {
-            "comment": "打卡",
-            "userID": 0,
-            "clockDate": "2018-08-01"
-        }
-    ],
-    "giveLeave": [
-        {
-            "comment": "员工请假发送信息",
-            "userId": 0,
-            "leaveTime": "2018/10/01-2018/10/03",
-            "askTime": "2018-08-01",
-            "leaveCatagoryID": "1",
-            "leaveReason": "世界那么大"
-        }
-    ],
-    "firstAnswer": [
-        {
-            "comment": "部门经理看到的",
-            "leaveId": 0,
-            "userId": 0,
-            "userName": "oldyellow",
-            "leaveTime": "2018/10/01-2018/10/03",
-            "leaveCatagoryID": "1",
-            "leaveReason": "世界那么大",
-            "askTime": "2018-08-01"
-        }
-    ],
-    "firstAnswerOK": [
-        {
-            "comment": "部门经理同意",
-            "leaveId": 0,
-            "userId": 0,
-            "userName": "oldyellow",
-            "leaveTime": "2018/10/01-2018/10/03",
-            "askTime": "2018-08-01",
-            "input0": "begin",
-            "firstAnswer": true,
-            "firstAnswerProviderName": "oldsky",
-            "approvalOnponion": "被感动了",
-            "input1": "end",
-            "firstAnswerTime": "2018-08-02" 
-        }
-    ],
-    "firstAnswerRefuse": [
-        {
-            "comment": "部门经理拒绝",
-            "leaveId": 0,
-            "userId": 0,
-            "userName": "oldyellow",
-            "leaveTime": "2018/10/01-2018/10/03",
-            "askTime": "2018-08-01",
-            "input0": "begin",
-            "firstAnswer": false,
-            "firstAnswerProviderName": "oldsky",
-            "firstApprovalOnponion": "没钱",
-            "input1": "end",
-            "firstAnswerTime": "2018-08-02" 
-        }
-    ],
-    "secondAnswer": [
-        {
-            "comment": "副总经理看到的",
-            "leaveId": 0,
-            "userId": 0,
-            "userName": "oldyellow",
-            "leaveTime": "2018/10/01-2018/10/03",
-            "askTime": "2018-08-01",
-            "leaveCatagoryID": "1",
-            "leaveReason": "世界那么大",
-            "firstAnswer": true,
-            "firstAnswerProviderName": "oldsky",
-            "firstApprovalOnponion": "被感动了",
-            "firstAnswerTime": "2018-08-02" 
-        }
-    ],
-    "secondAnswerOK": [
-        {
-            "comment": "副总经理输入",
-            "secondAnswer": true,
-            "secondAnswerPrividerName": "yellowmellon",
-            "secondApprovalOnponion": "被感动了+1"
-        }
-    ],
-    "secondAnswerRefuse":[
-        {
-            "comment": "副总经理否决",
-            "secondAnswer": false,
-            "secondAnswerPrividerName": "yellowsky",
-            "secondApprovalOnponion": "不同意"
-        }
-    ],
-    "lastAnswer": [
-        {
-            "comment": "总经理看到的",
-            "leaveId": 0,
-            "userId": 0,
-            "userName": "oldyellow",
-            "leaveTime": "2018/10/01-2018/10/03",
-            "askTime": "2018-08-01",
-            "leaveCatagoryID": "1",
-            "leaveReason": "世界那么大",
-            "firstAnswer": true,
-            "firstAnswerProviderName": "oldsky",
-            "firstAnswerTime": "2018-08-02", 
-            "secondAnswer": true,
-            "secondAnswerProviderName": "oldsky",
-            "secondApprovalOnponion": "被感动了+1",
-            "secondAnswerTime": "2018-08-02" 
-        }
-    ],
-    "lastAnswerOK":[
-        {
-            "comment": "总经理同意",
-            "lastAnswer": true,
-            "lastAnswerPrividerName": "yellowsky",
-            "lastApprovalOnponion": "被感动了+2"
-        }
-    ],
-    "lastAnswerRefuse":[
-        {
-            "comment": "总经理否决",
-            "lastAnswer": false,
-            "lastAnswerPrividerName": "yellowsky",
-            "lastApprovalOnponion": "不可能"
-        }
-    ],
-    "GetLeaveOK":[
-        {
-            "comment": "员工请假反馈",
-            "leaveId": "0",
-            "askTime": "2018-08-01",
-            "leaveCatagoryID": "1",
-            "askState": true,
-            "firstAnswerProviderName": "oldsky",
-            "firstApprovalOnponion": "被感动了",
-            "firstAnswerTime": "2018-08-02",
-            "secondAnswerPrividerName": "yellowmellon",
-            "secondApprovalOnponion": "被感动了+1",
-            "secondAnswerTime": "2018-08-03",
-            "lastAnswerPrividerName": "yellowsky",
-            "lastApprovalOnponion": "被感动了+2",
-            "lastAnswerTime": "2018-08-04"
-        }
-    ],
-    "GetLeaveRefuse": [
-        {
-            "comment": "员工请假反馈",
-            "leaveId": "0",
-            "askTime": "2018-08-01",
-            "leaveCatagoryID": "1",
-            "askState": false,
-            "refuserLevel": "second",
-            "secondAnswerPrividerName": "yellowsky",
-            "secondAnswerTime": "2018-08-03",
-            "secondApprovalOnponion": "不同意"
-        }
-    ],
-    "giveOut": [
-        {
-            "comment": "员工外出发送信息",
-            "userId": 0,
-            "OutTime": "5pm-6pm",
-            "askTime": "2018-08-01",
-            "OutReason": "拿个外卖"
-        }
-    ],
-    "firstOutAnswer": [
-        {
-            "comment": "部门经理看到的",
-            "OutId": 0,
-            "userId": 0,
-            "userName": "oldyellow",
-            "OutTime": "5pm-6pm",
-            "OutReason": "拿个外卖",
-            "askTime": "2018-08-01"
-        }
-    ],
-    "firstOutAnswerOK": [
-        {
-            "comment": "部门经理同意",
-            "OutId": 0,
-            "userId": 0,
-            "userName": "oldyellow",
-            "OutTime": "5pm-6pm",
-            "askTime": "2018-08-01",
-            "input0": "begin",
-            "firstOutAnswer": true,
-            "firstOutAnswerProviderName": "oldsky",
-            "approvalOnponion": "去",
-            "input1": "end",
-            "firstOutAnswerTime": "2018-08-02" 
-        }
-    ],
-    "firstOutAnswerRefuse": [
-        {
-            "comment": "部门经理拒绝",
-            "OutId": 0,
-            "userId": 0,
-            "userName": "oldyellow",
-            "OutTime": "5pm-6pm",
-            "askTime": "2018-08-01",
-            "input0": "begin",
-            "firstOutAnswer": false,
-            "firstOutAnswerProviderName": "oldsky",
-            "firstApprovalOnponion": "堕落",
-            "input1": "end",
-            "firstOutAnswerTime": "2018-08-02" 
-        }
-    ],
-    "secondOutAnswer": [
-        {
-            "comment": "副总经理看到的",
-            "OutId": 0,
-            "userId": 0,
-            "userName": "oldyellow",
-            "OutTime": "5pm-6pm",
-            "askTime": "2018-08-01",
-            "OutReason": "拿个外卖",
-            "firstOutAnswer": true,
-            "firstOutAnswerProviderName": "oldsky",
-            "firstApprovalOnponion": "去",
-            "firstOutAnswerTime": "2018-08-02" 
-        }
-    ],
-    "secondOutAnswerOK": [
-        {
-            "comment": "副总经理输入",
-            "secondOutAnswer": true,
-            "secondOutAnswerPrividerName": "yellowmellon",
-            "secondApprovalOnponion": "去+1"
-        }
-    ],
-    "secondOutAnswerRefuse":[
-        {
-            "comment": "副总经理否决",
-            "secondOutAnswer": false,
-            "secondOutAnswerPrividerName": "yellowsky",
-            "secondApprovalOnponion": "腐朽"
-        }
-    ],
-    "lastOutAnswer": [
-        {
-            "comment": "总经理看到的",
-            "OutId": 0,
-            "userId": 0,
-            "userName": "oldyellow",
-            "OutTime": "5pm-6pm",
-            "askTime": "2018-08-01",
-            "OutReason": "拿个外卖",
-            "firstOutAnswer": true,
-            "firstOutAnswerProviderName": "oldsky",
-            "firstOutAnswerTime": "2018-08-02", 
-            "secondOutAnswer": true,
-            "secondOutAnswerProviderName": "oldsky",
-            "secondApprovalOnponion": "去+1",
-            "secondOutAnswerTime": "2018-08-02" 
-        }
-    ],
-    "lastOutAnswerOK":[
-        {
-            "comment": "总经理同意",
-            "lastOutAnswer": true,
-            "lastOutAnswerPrividerName": "yellowsky",
-            "lastApprovalOnponion": "去+2"
-        }
-    ],
-    "lastOutAnswerRefuse":[
-        {
-            "comment": "总经理否决",
-            "lastOutAnswer": false,
-            "lastOutAnswerPrividerName": "yellowsky",
-            "lastApprovalOnponion": "自暴自弃"
-        }
-    ],
-    "GetOutOK":[
-        {
-            "comment": "员工外出反馈",
-            "OutId": "0",
-            "askTime": "2018-08-01",
-            "askState": true,
-            "firstOutAnswerProviderName": "oldsky",
-            "firstApprovalOnponion": "去",
-            "firstOutAnswerTime": "2018-08-02",
-            "secondOutAnswerPrividerName": "yellowmellon",
-            "secondApprovalOnponion": "去+1",
-            "secondOutAnswerTime": "2018-08-03",
-            "lastOutAnswerPrividerName": "yellowsky",
-            "lastApprovalOnponion": "去+2",
-            "lastOutAnswerTime": "2018-08-04"
-        }
-    ],
-    "GetOutRefuse": [
-        {
-            "comment": "员工外出反馈",
-            "OutId": "0",
-            "askTime": "2018-08-01",
-            "askState": false,
-            "refuserLevel": "second",
-            "secondOutAnswerPrividerName": "yellowsky",
-            "secondOutAnswerTime": "2018-08-03",
-            "secondApprovalOnponion": "腐朽"
-        }
-    ]
-
-
+  "books": [
+    {
+      "id": 2,
+      "bid": "218",
+      "bname": "张2",
+      "stime": "2016/12/5",
+      "number": "two day"
+    },
+    {
+      "id": 3,
+      "bid": "100",
+      "bname": "张3",
+      "stime": "2016/12/6",
+      "number": "three day"
+    },
+    {
+      "id": "5",
+      "bid": "2",
+      "bname": "w",
+      "stime": "2019-1-15",
+      "number": "一天"
+    },
+    {
+      "id": "6",
+      "bid": "2",
+      "bname": "c",
+      "stime": "2019-1-15",
+      "number": "两天"
+    }
+  ],
+  "agree-books": [
+    {
+      "id": "1",
+      "bid": "3016",
+      "bname": "张1",
+      "stime": "2016/12/12",
+      "number": "2016/12/12"
+    },
+    {
+      "id": 2,
+      "bid": "218",
+      "bname": "张2",
+      "stime": "2016/12/5",
+      "number": "two day"
+    },
+    {
+      "id": "3",
+      "bid": "100",
+      "bname": "张3",
+      "stime": "2016/12/30",
+      "number": "2016/12/30"
+    },
+    {
+      "id": "4",
+      "bid": "30161",
+      "bname": "张4",
+      "stime": "2019/1/1",
+      "number": "2019/1/1"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "comment": "登录",
+      "userId": 1001,
+      "password": "123"
+  },
+  {
+      "id": 2,
+      "userId": 101,
+      "password": "1234"
+  },
+  {
+      "id": 3,
+      "userId": 11,
+      "password": "12345"
+  },
+    {
+      "id": 4,
+      "userId": 1,
+      "password": "123456"
+    }
+  ],
+  "getUser": [
+    {
+      "comment": "登陆后显示信息",
+      "leaveTimes": 2,
+      "cardState": true,
+      "userName": "oldyellow"
+    },
+    {
+      "userName": "depManager"
+    },
+    {
+      "userName": "degManager"
+    },
+    {
+      "userName": "Manager"
+    }
+  ],
+  "clockIn": [
+    {
+      "comment": "打卡",
+      "userID": 0,
+      "clockDate": "2018-08-01"
+    }
+  ],
+  "giveLeave": [
+    {
+      "comment": "员工请假发送信息",
+      "userId": 0,
+      "leaveTime": "2018/10/01-2018/10/03",
+      "askTime": "2018-08-01",
+      "leaveCatagoryID": "1",
+      "leaveReason": "世界那么大"
+    }
+  ],
+  "firstAnswer": [
+    {
+      "comment": "部门经理看到的",
+      "leaveId": 0,
+      "userId": 0,
+      "userName": "oldyellow",
+      "leaveTime": "2018/10/01-2018/10/03",
+      "leaveCatagoryID": "1",
+      "leaveReason": "世界那么大",
+      "askTime": "2018-08-01"
+    }
+  ],
+  "firstAnswerOK": [
+    {
+      "comment": "部门经理同意",
+      "leaveId": 0,
+      "userId": 0,
+      "userName": "oldyellow",
+      "leaveTime": "2018/10/01-2018/10/03",
+      "askTime": "2018-08-01",
+      "input0": "begin",
+      "firstAnswer": true,
+      "firstAnswerProviderName": "oldsky",
+      "approvalOnponion": "被感动了",
+      "input1": "end",
+      "firstAnswerTime": "2018-08-02"
+    }
+  ],
+  "firstAnswerRefuse": [
+    {
+      "comment": "部门经理拒绝",
+      "leaveId": 0,
+      "userId": 0,
+      "userName": "oldyellow",
+      "leaveTime": "2018/10/01-2018/10/03",
+      "askTime": "2018-08-01",
+      "input0": "begin",
+      "firstAnswer": false,
+      "firstAnswerProviderName": "oldsky",
+      "firstApprovalOnponion": "没钱",
+      "input1": "end",
+      "firstAnswerTime": "2018-08-02"
+    }
+  ],
+  "secondAnswer": [
+    {
+      "comment": "副总经理看到的",
+      "leaveId": 0,
+      "userId": 0,
+      "userName": "oldyellow",
+      "leaveTime": "2018/10/01-2018/10/03",
+      "askTime": "2018-08-01",
+      "leaveCatagoryID": "1",
+      "leaveReason": "世界那么大",
+      "firstAnswer": true,
+      "firstAnswerProviderName": "oldsky",
+      "firstApprovalOnponion": "被感动了",
+      "firstAnswerTime": "2018-08-02"
+    }
+  ],
+  "secondAnswerOK": [
+    {
+      "comment": "副总经理输入",
+      "secondAnswer": true,
+      "secondAnswerPrividerName": "yellowmellon",
+      "secondApprovalOnponion": "被感动了+1"
+    }
+  ],
+  "secondAnswerRefuse": [
+    {
+      "comment": "副总经理否决",
+      "secondAnswer": false,
+      "secondAnswerPrividerName": "yellowsky",
+      "secondApprovalOnponion": "不同意"
+    }
+  ],
+  "lastAnswer": [
+    {
+      "comment": "总经理看到的",
+      "leaveId": 0,
+      "userId": 0,
+      "userName": "oldyellow",
+      "leaveTime": "2018/10/01-2018/10/03",
+      "askTime": "2018-08-01",
+      "leaveCatagoryID": "1",
+      "leaveReason": "世界那么大",
+      "firstAnswer": true,
+      "firstAnswerProviderName": "oldsky",
+      "firstAnswerTime": "2018-08-02",
+      "secondAnswer": true,
+      "secondAnswerProviderName": "oldsky",
+      "secondApprovalOnponion": "被感动了+1",
+      "secondAnswerTime": "2018-08-02"
+    }
+  ],
+  "lastAnswerOK": [
+    {
+      "comment": "总经理同意",
+      "lastAnswer": true,
+      "lastAnswerPrividerName": "yellowsky",
+      "lastApprovalOnponion": "被感动了+2"
+    }
+  ],
+  "lastAnswerRefuse": [
+    {
+      "comment": "总经理否决",
+      "lastAnswer": false,
+      "lastAnswerPrividerName": "yellowsky",
+      "lastApprovalOnponion": "不可能"
+    }
+  ],
+  "GetLeaveOK": [
+    {
+      "comment": "员工请假反馈",
+      "leaveId": "0",
+      "askTime": "2018-08-01",
+      "leaveCatagoryID": "1",
+      "askState": true,
+      "firstAnswerProviderName": "oldsky",
+      "firstApprovalOnponion": "被感动了",
+      "firstAnswerTime": "2018-08-02",
+      "secondAnswerPrividerName": "yellowmellon",
+      "secondApprovalOnponion": "被感动了+1",
+      "secondAnswerTime": "2018-08-03",
+      "lastAnswerPrividerName": "yellowsky",
+      "lastApprovalOnponion": "被感动了+2",
+      "lastAnswerTime": "2018-08-04"
+    }
+  ],
+  "GetLeaveRefuse": [
+    {
+      "comment": "员工请假反馈",
+      "leaveId": "0",
+      "askTime": "2018-08-01",
+      "leaveCatagoryID": "1",
+      "askState": false,
+      "refuserLevel": "second",
+      "secondAnswerPrividerName": "yellowsky",
+      "secondAnswerTime": "2018-08-03",
+      "secondApprovalOnponion": "不同意"
+    }
+  ],
+  "giveOut": [
+    {
+      "comment": "员工外出发送信息",
+      "userId": 0,
+      "OutTime": "5pm-6pm",
+      "askTime": "2018-08-01",
+      "OutReason": "拿个外卖"
+    }
+  ],
+  "firstOutAnswer": [
+    {
+      "comment": "部门经理看到的",
+      "OutId": 0,
+      "userId": 0,
+      "userName": "oldyellow",
+      "OutTime": "5pm-6pm",
+      "OutReason": "拿个外卖",
+      "askTime": "2018-08-01"
+    }
+  ],
+  "firstOutAnswerOK": [
+    {
+      "comment": "部门经理同意",
+      "OutId": 0,
+      "userId": 0,
+      "userName": "oldyellow",
+      "OutTime": "5pm-6pm",
+      "askTime": "2018-08-01",
+      "input0": "begin",
+      "firstOutAnswer": true,
+      "firstOutAnswerProviderName": "oldsky",
+      "approvalOnponion": "去",
+      "input1": "end",
+      "firstOutAnswerTime": "2018-08-02"
+    }
+  ],
+  "firstOutAnswerRefuse": [
+    {
+      "comment": "部门经理拒绝",
+      "OutId": 0,
+      "userId": 0,
+      "userName": "oldyellow",
+      "OutTime": "5pm-6pm",
+      "askTime": "2018-08-01",
+      "input0": "begin",
+      "firstOutAnswer": false,
+      "firstOutAnswerProviderName": "oldsky",
+      "firstApprovalOnponion": "堕落",
+      "input1": "end",
+      "firstOutAnswerTime": "2018-08-02"
+    }
+  ],
+  "secondOutAnswer": [
+    {
+      "comment": "副总经理看到的",
+      "OutId": 0,
+      "userId": 0,
+      "userName": "oldyellow",
+      "OutTime": "5pm-6pm",
+      "askTime": "2018-08-01",
+      "OutReason": "拿个外卖",
+      "firstOutAnswer": true,
+      "firstOutAnswerProviderName": "oldsky",
+      "firstApprovalOnponion": "去",
+      "firstOutAnswerTime": "2018-08-02"
+    }
+  ],
+  "secondOutAnswerOK": [
+    {
+      "comment": "副总经理输入",
+      "secondOutAnswer": true,
+      "secondOutAnswerPrividerName": "yellowmellon",
+      "secondApprovalOnponion": "去+1"
+    }
+  ],
+  "secondOutAnswerRefuse": [
+    {
+      "comment": "副总经理否决",
+      "secondOutAnswer": false,
+      "secondOutAnswerPrividerName": "yellowsky",
+      "secondApprovalOnponion": "腐朽"
+    }
+  ],
+  "lastOutAnswer": [
+    {
+      "comment": "总经理看到的",
+      "OutId": 0,
+      "userId": 0,
+      "userName": "oldyellow",
+      "OutTime": "5pm-6pm",
+      "askTime": "2018-08-01",
+      "OutReason": "拿个外卖",
+      "firstOutAnswer": true,
+      "firstOutAnswerProviderName": "oldsky",
+      "firstOutAnswerTime": "2018-08-02",
+      "secondOutAnswer": true,
+      "secondOutAnswerProviderName": "oldsky",
+      "secondApprovalOnponion": "去+1",
+      "secondOutAnswerTime": "2018-08-02"
+    }
+  ],
+  "lastOutAnswerOK": [
+    {
+      "comment": "总经理同意",
+      "lastOutAnswer": true,
+      "lastOutAnswerPrividerName": "yellowsky",
+      "lastApprovalOnponion": "去+2"
+    }
+  ],
+  "lastOutAnswerRefuse": [
+    {
+      "comment": "总经理否决",
+      "lastOutAnswer": false,
+      "lastOutAnswerPrividerName": "yellowsky",
+      "lastApprovalOnponion": "自暴自弃"
+    }
+  ],
+  "GetOutOK": [
+    {
+      "comment": "员工外出反馈",
+      "OutId": "0",
+      "askTime": "2018-08-01",
+      "askState": true,
+      "firstOutAnswerProviderName": "oldsky",
+      "firstApprovalOnponion": "去",
+      "firstOutAnswerTime": "2018-08-02",
+      "secondOutAnswerPrividerName": "yellowmellon",
+      "secondApprovalOnponion": "去+1",
+      "secondOutAnswerTime": "2018-08-03",
+      "lastOutAnswerPrividerName": "yellowsky",
+      "lastApprovalOnponion": "去+2",
+      "lastOutAnswerTime": "2018-08-04"
+    }
+  ],
+  "GetOutRefuse": [
+    {
+      "comment": "员工外出反馈",
+      "OutId": "0",
+      "askTime": "2018-08-01",
+      "askState": false,
+      "refuserLevel": "second",
+      "secondOutAnswerPrividerName": "yellowsky",
+      "secondOutAnswerTime": "2018-08-03",
+      "secondApprovalOnponion": "腐朽"
+    }
+  ]
 }

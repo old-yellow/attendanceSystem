@@ -135,3 +135,4 @@ getwaichuok():Promise<Hero[]>{
       .then(res => res.json() as Hero[])
       .catch(this.handleError);
 }
+}

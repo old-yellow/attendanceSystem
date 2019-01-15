@@ -2,61 +2,24 @@ import { Component, OnInit } from '@angular/core';
 import{Hero} from '../../domain/hero';
 import { HEROES } from '../../mock-heroes';
 import { HeroService } from '../../service/hero.service';
+import { Router } from '../../../../node_modules/@angular/router';
 @Component({
   selector: 'app-hero3',
   templateUrl: './hero3.component.html',
   styleUrls: ['./hero3.component.css']
 })
 export class Hero3Component implements OnInit {
-  getdata;
-  savestaff;
-  leavedata;
-  outdata;
-  leave:Array<Hero>;
-  out:Array<Hero>;
-  constructor(
-    private heroService: HeroService
-  ) { }
+  constructor(private router: Router) {}
 
-  ngOnInit() {
+  
+  onClickToSearch() {
+    this.router.navigate(['search']);
   }
-  getDate() {
-    this.getdata = this.heroService.getInputValue1();
+  onClickToOlds() {
+    this.router.navigate(['delete']);
   }
-  saveStaffDate() {
-    this.heroService.setInputStaff(this.savestaff);
+  onClickToAdd() {
+    this.router.navigate(['add']);
   }
-  getLeaveDate(){
-    this.leavedata = this.heroService. getLeavesThree()
-    .then(result =>{
-      console.log(result);
-      this.leave = result;
-      
-    });
-  }
-  deleteLeaveDate(){
-    alert("反馈信息给员工");
-    this.leave = [];
-  }
-  hintleave(){
-    alert("反馈信息给员工");
-    this.leave =[];
-  }
-
-  getOutDate(){
-    this.outdata = this.heroService. getOutThree()
-    .then(result =>{
-      console.log(result);
-      this.out = result;
-      
-    });
-  }
-  deleteOutDate(){
-    alert("反馈信息给员工");
-    this.out = [];
-  }
-  hintout(){
-    alert("反馈信息给员工");
-    this.out =[];
-  }
+  ngOnInit(): void {}
 }

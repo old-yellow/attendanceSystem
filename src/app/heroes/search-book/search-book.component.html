@@ -1,0 +1,32 @@
+<head>
+  <meta charset="UTF-8">
+</head>
+<div class="block">
+   <span class="id">序号</span>
+   <span class="span">请假的编号</span>
+   <span class="span">员工名称</span>
+   <span class="span">请假开始时间</span>
+   <span class="span">请假天数</span>
+   <ul class="books">
+     <li *ngFor="let book of books">
+       <span class="badge">{{book.id}}</span>
+       <span class="span">{{book.bid}}</span>
+       <span class="span">{{book.bname}}</span>
+       <span class="span">{{book.stime}}</span>
+       <span class="span">{{book.number}}</span>
+     </li>
+   </ul>
+   <app-book-details [book]="selectedBook"></app-book-details>
+ </div>
+ <div class="blockSearch">
+   <div class="book_id">
+     <input placeholder="请假编号" [(ngModel)]="bid" class="input"/>
+   </div>
+   <div class="imput">
+     <input placeholder="员工名称" [(ngModel)]="bname" class="input"/>
+   </div>
+   <button (click)="onSubmit()">查 找</button>
+ </div>
+ <div class="tip">
+  {{tip}}
+</div>
